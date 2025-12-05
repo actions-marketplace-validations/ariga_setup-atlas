@@ -33,6 +33,22 @@ By default, the `latest` version of Atlas is being used. If you want to lock a s
             version: "vX.Y.Z"
 ```
 
+If you want to install the beta version of Atlas, specify `beta` as the version:
+
+```yaml
+      - uses: ariga/setup-atlas@master
+        with:
+            version: "beta"
+```
+
+### cloud-token
+
+The Atlas Cloud token to use for authentication. Must be passed as a secret.
+```yaml
+      - uses: ariga/setup-atlas@master
+        with:
+            cloud-token: ${{ secrets.ATLAS_CLOUD_TOKEN }}
+```
 
 ## Legal
 
